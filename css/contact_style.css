@@ -171,27 +171,7 @@ a:active { text-decoration: none; }
 
 
    
-   .footer{
-       background-color: #A4D8CC;
-       height: 123px;
-       color: white;
-       display: flex;
-       align-items: center;
-       
-   }
-   .footerInsta{
-       margin-left: 30px;
-       font-size: 38px;
-       
-   }
-   .footerFB{
-       font-size: 38px;
-       margin-left: 30px;
-   }
-   .footerTwitter{
-       font-size: 38px;
-       margin-left: 30px;
-   }
+  
 
    @media (max-width: 420px) {
 
@@ -360,26 +340,6 @@ a:active { text-decoration: none; }
      color: #007777;
      }
     
-     .footer{
-        background-color: #A4D8CC;
-        height: 80px;
-        color: white;
-        display: flex;
-        align-items: center;
-        
-    }
-    .footerInsta{
-        margin-left: 10px;
-        font-size: 20px;
-        
-    }
-    .footerFB{
-        font-size: 20px;
-        margin-left: 10px;
-    }
-    .footerTwitter{
-        font-size: 20px;
-        margin-left:10px;
-    }
+    
 
 }
