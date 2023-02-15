@@ -51,8 +51,9 @@ body{
        
    }
    .navItem3 a{
-    font-size: 32px;
-    color: white;
+       font-size: 38px;
+    font-weight: bold;
+    color: #007777 
    }
    .navItem4{
        font-size: 32px;
