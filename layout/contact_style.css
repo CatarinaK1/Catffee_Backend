@@ -1,0 +1,385 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+   }
+   
+   nav {
+   
+    background-color: #A4D8CC;
+    display: flex;
+    height: 123px;
+    justify-content: space-around; 
+}
+
+
+.logoText{
+    margin-left: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+
+}
+
+ .navItem1{
+     width: 60px;
+     height: 60px;
+ }
+
+.navItem1 img{
+     max-width: 100%;
+     max-height: 100%;
+}
+.navItem2{
+    margin-left: 30px;
+    font-size: 38px;
+    color: white;
+}
+
+.navRest{
+    margin-right: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+}
+.navItem3{
+    font-size: 32px;
+    color: white;
+}
+
+.navItem3 a{
+    font-size: 32px;
+    color: white;
+}
+
+.navItem4{
+    font-size: 32px;
+    color: white;
+    margin-left: 30px;
+}
+
+.navItem4 a{
+    font-size: 32px;
+    color: white;
+    margin-left: 30px;
+}
+
+.navItem5{
+    font-size: 32px;
+    color: white;
+    margin-left: 30px;
+}
+
+.navItem5 a{
+    font-size: 32px;
+    color: white;
+    margin-left: 30px;
+}
+
+.navItem6{
+    font-size: 32px;
+    margin-left: 30px;
+    font-weight: bold;
+    color: #007777
+}
+.navItem6 a{
+    font-size: 38px;
+    margin-left: 30px;
+    font-weight: bold;
+    color: #007777
+}
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
+
+   
+   section{
+       height: 1571px;
+       background-color: #FFC1C1;
+
+   }
+   .coverImage{
+     height: 457px;
+     background-color: #FFC1C1;
+     flex-basis: 100%;
+     max-height: 100%;
+     min-width: 100%;
+     object-fit: cover;
+     vertical-align: bottom;
+
+   }
+   
+   .section1{
+       background-color: #6bc8b2;
+       height: 457px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+   .section1 h1{
+       font-size: 40px;
+       color: #007777;
+   }
+   .section1 p{
+       color: #000000;
+       font-size: 20px;
+       margin-left: 400px;
+       margin-right: 400px;
+   }
+   
+   .section2{
+       background-color:#FFC1C1;
+       height: 657px;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-around;
+       align-items: center;
+       
+      
+   }
+
+   
+
+   .addressContact{
+   text-align: center;
+   }
+
+   .addressContact p{
+    text-align: center;
+    font-size: 20px;
+    }
+
+   .Map{
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+   }
+
+
+
+   .section2 h2, h3{
+    font-size: 30px;
+    color: #007777;
+    }
+
+
+   
+   .footer{
+       background-color: #A4D8CC;
+       height: 123px;
+       color: white;
+       display: flex;
+       align-items: center;
+       
+   }
+   .footerInsta{
+       margin-left: 30px;
+       font-size: 38px;
+       
+   }
+   .footerFB{
+       font-size: 38px;
+       margin-left: 30px;
+   }
+   .footerTwitter{
+       font-size: 38px;
+       margin-left: 30px;
+   }
+
+   @media (max-width: 420px) {
+
+    nav {
+   
+       background-color: #A4D8CC;
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       height: 80px;
+       justify-content: space-around;
+   }
+   .logoText{
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+    }
+
+    .navItem1{
+     width: 30px;
+     height: 30px;
+    }
+
+     .navItem1 img{
+     max-width: 100%;
+     max-height: 100%;
+    }
+    .navItem2{
+    margin-left: 10px;
+    font-size: 18px;
+    color: white;
+    }
+
+    .navRest{
+        margin-right: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-grow: 1;
+    }
+    .navItem3{
+        font-size: 20px;
+        color: white;
+    }
+    .navItem3 a{
+        font-size: 19px;
+        color: white;
+    }
+
+    .navItem4{
+        font-size: 20px;
+        color: white;
+        margin-left: 10px;
+    }
+
+    .navItem4 a{
+        font-size: 20px;
+        color: white;
+        margin-left: 10px;
+    }
+
+    .navItem5{
+        font-size: 20px;
+        color: white;
+        margin-left: 10px;
+    }
+
+    .navItem5 a{
+        font-size: 20px;
+        color: white;
+        margin-left: 10px;
+    }
+    .navItem6{
+        font-size: 20px;
+        color: #007777;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+
+    .navItem6 a{
+        font-size: 22px;
+        color: #007777;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+
+    a:link { text-decoration: none; }
+
+    a:visited { text-decoration: none; }
+
+    a:hover { text-decoration: none; }
+
+    a:active { text-decoration: none; }
+
+    section{
+        height: 1071px;
+        background-color: #FFC1C1;
+ 
+    }
+
+    .section1{
+        background-color: #6bc8b2;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section1 h1{
+        font-size: 20px;
+        color: #007777;
+    }
+    .section1 p{
+        color: #000000;
+        font-size: 16px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .coverImage{
+        height: 200px;
+        background-color: #FFC1C1;
+        flex-basis: 100%;
+        max-height: 100%;
+        min-width: 100%;
+        object-fit: cover;
+        vertical-align: bottom;
+   
+      }
+
+      .section2{
+        background-color:#FFC1C1;
+        height: 557px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;  
+    }
+
+    .section2 p{
+        color: #000000;
+        font-size: 16px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+ 
+    .addressContact{
+    text-align: center;
+    }
+ 
+    .Map{
+     max-width: 80%;
+     display: flex;
+     flex-wrap: wrap;
+     margin-left: 35px;
+    }
+ 
+ 
+ 
+    .section2 h2, h3{
+     font-size: 18px;
+     color: #007777;
+     }
+    
+     .footer{
+        background-color: #A4D8CC;
+        height: 80px;
+        color: white;
+        display: flex;
+        align-items: center;
+        
+    }
+    .footerInsta{
+        margin-left: 10px;
+        font-size: 20px;
+        
+    }
+    .footerFB{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .footerTwitter{
+        font-size: 20px;
+        margin-left:10px;
+    }
+
+}

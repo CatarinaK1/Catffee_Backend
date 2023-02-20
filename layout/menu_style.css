@@ -1,0 +1,328 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0; 
+   }
+   
+   nav {
+    
+       background-color: #A4D8CC;
+       display: flex;
+       flex-wrap: wrap;
+       height: 123px;
+       
+       justify-content: space-around;
+   }
+   
+   .logoText{
+       margin-left: 30px;
+       display: flex;
+       justify-content: flex-start;
+       align-items: center;
+       flex-grow: 1;
+   
+   }
+   
+    .navItem1{
+        width: 60px;
+        height: 60px;
+    }
+
+   .navItem1 img{
+        max-width: 100%;
+        max-height: 100%;
+   }
+   .navItem2{
+       margin-left: 30px;
+       font-size: 38px;
+       color: white;
+   }
+   
+   .navRest{
+       margin-right: 30px;
+       display: flex;
+       justify-content: flex-end;
+       align-items: center;
+       flex-grow: 1;
+   }
+   .navItem3{
+    font-size: 32px;
+    color: white;
+    
+       
+   }
+   .navItem3 a{
+ 
+    font-size: 32px;
+    color: white;
+    margin-left: 30px;
+   }
+   .navItem4{
+       font-size: 38px;
+       font-weight: bold;
+       color: #007777;
+       margin-left: 30px;
+   }
+   .navItem4 a{
+    font-size: 38px;
+    margin-left: 30px;
+    font-weight: bold;
+    color: #007777  
+   }
+   .navItem5{
+       font-size: 32px;
+       color: white;
+       margin-left: 30px;
+   }
+
+   .navItem5 a{
+    font-size: 32px;
+    color: white;
+    margin-left: 30px;
+   }
+   .navItem6{
+       font-size: 32px;
+       color: white;
+       margin-left: 30px;
+   }
+
+   .navItem6 a{
+    font-size: 32px;
+    margin-left: 30px;
+    color: white;
+}
+
+    a:link { text-decoration: none; }
+
+    a:visited { text-decoration: none; }
+
+    a:hover { text-decoration: none; }
+
+    a:active { text-decoration: none; }
+   
+   section{
+    
+       background-color: #FFC1C1;
+
+   }
+   .coverImage{
+     height: 457px;
+     background-color: #FFC1C1;
+     flex-basis: 100%;
+     max-height: 100%;
+     min-width: 100%;
+     object-fit: cover;
+     vertical-align: bottom;
+
+   }  
+   .footer{
+       background-color: #A4D8CC;
+       height: 123px;
+       color: white;
+       display: flex;
+       align-items: center;
+       
+   }
+   .footerInsta{
+       margin-left: 30px;
+       font-size: 38px;
+       
+   }
+   .footerFB{
+       font-size: 38px;
+       margin-left: 30px;
+   }
+   .footerTwitter{
+       font-size: 38px;
+       margin-left: 30px;
+   }
+   
+
+
+.Snacks , .Salads , .Coffee , .Beverages , .Smoothies , .Desserts{
+    margin: 10px 50px 50px 50px;
+    text-align: left;
+  }
+
+  th{
+    width: 280px;
+    text-align: left;
+    font-weight: bold;
+    color: #007777;
+    font-size:30px;
+  }
+ td{
+    text-align: cleft;
+    font-size:20px;
+ }
+
+
+
+ .container{
+    position: relative; /*Make sure container is relative*/
+}
+.text{
+    font-size: 50px;
+    position: absolute; /*Make sure text is absolute*/
+    top: 50%; /* Position text in the middle of the container*/
+    left: 50%; /* Position text in the middle of the container*/
+    transform: translate(-50%, -50%); /* Center the text */
+    text-align: center; /* Center the text */
+    color:white; /*Text color*/
+    z-index: 1; /*Make sure text is on top of the image*/
+}
+
+
+ @media (max-width: 420px) {
+    .text{
+        font-size: 15px;
+    }
+    nav {
+   
+       background-color: #A4D8CC;
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       height: 80px;
+       justify-content: space-around;
+   }
+   .logoText{
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+    }
+
+    .navItem1{
+     width: 30px;
+     height: 30px;
+    }
+
+     .navItem1 img{
+     max-width: 100%;
+     max-height: 100%;
+    }
+    .navItem2{
+    margin-left: 10px;
+    font-size: 18px;
+    color: white;
+    }
+
+    .navRest{
+        margin-right: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-grow: 1;
+    }
+    .navItem3{
+        font-size: 20px;
+        color: white;
+        margin-left: 10px;
+    }
+
+    .navItem3 a{
+        font-size: 20px;
+        color: white;
+        margin-left: 10px;
+    }
+    .navItem4{
+        font-size: 22px;
+        font-weight: bold;
+        color: #007777;
+        margin-left: 10px;
+    }
+    .navItem4 a{
+        font-size: 20px;
+        color: #007777;
+        font-weight: bold;
+    }
+   
+    .navItem5{
+        font-size: 20px;
+        color: white;
+        margin-left: 10px;
+    }
+    .navItem5 a{
+        font-size: 20px;
+        color: white;
+        margin-left: 10px;
+    }
+    .navItem6{
+        font-size: 20px;
+        color: white;
+        margin-left: 10px;
+    }
+    .navItem6 a{
+        font-size: 20px;
+        color: white;
+        margin-left: 10px;
+    }
+
+    a:link { text-decoration: none; }
+
+    a:visited { text-decoration: none; }
+
+    a:hover { text-decoration: none; }
+
+    a:active { text-decoration: none; }
+    
+
+    /*sections start*/
+
+
+    section{
+        height: auto;
+        overflow: hidden;
+    }
+    .coverImage{
+      zoom: 100%;
+      overflow: hidden;
+      height: 200px;
+      width: 100%;
+      background-color: white
+    }
+    .coverImage img{
+        height: 200%;
+        width: 100%;
+    }
+    
+
+     /*footer*/
+
+    .footer{
+        background-color: #A4D8CC;
+        height: 80px;
+        color: white;
+        display: flex;
+        align-items: center;
+        
+    }
+    .footerInsta{
+        margin-left: 10px;
+        font-size: 20px;
+        
+    }
+    .footerFB{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .footerTwitter{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    th{
+        text-align: left;
+        font-weight: bold;
+        color: #007777;
+        font-size:18px;
+      }
+     td{
+        text-align: left;
+        font-size:16px;
+     }
+   }
+   
