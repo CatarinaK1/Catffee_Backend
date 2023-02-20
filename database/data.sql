@@ -100,14 +100,6 @@ COMMIT;
 
 
 --Aliakbar Kamali
--- phpMyAdmin SQL Dump
--- version 5.2.0
--- https://www.phpmyadmin.net/
---
--- Host: db
--- Generation Time: Feb 20, 2023 at 12:31 PM
--- Server version: 8.0.30
--- PHP Version: 8.0.19
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -127,7 +119,7 @@ SET time_zone = "+00:00";
 
 --
 -- Table structure for table `menu`
---
+-- AliakbarSs
 
 CREATE TABLE `menu` (
   `itemid` int NOT NULL,
