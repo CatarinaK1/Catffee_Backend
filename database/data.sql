@@ -99,7 +99,7 @@ COMMIT;
 -------************************************************************************************************
 
 
---Aliakbar Kamali MENU table
+--Aliakbar Kamali
 -- phpMyAdmin SQL Dump
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
@@ -127,7 +127,7 @@ SET time_zone = "+00:00";
 
 --
 -- Table structure for table `menu`
---
+-- AliakbarSs
 
 CREATE TABLE `menu` (
   `itemid` int NOT NULL,
