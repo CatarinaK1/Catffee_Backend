@@ -94,3 +94,39 @@ COMMIT;
 -------------****************************************************************************************************
 -------************************************************************************************************
 
+--Anil's Order Table--
+
+-- Table structure for table `Order`
+--
+
+CREATE TABLE `Order` (
+  `OrderId` int NOT NULL,
+  `CustomerId` int NOT NULL,
+  `FirstName` varchar(50) NOT NULL,
+  `TotalSpent` int NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `Order`
+--
+ALTER TABLE `Order`
+  ADD PRIMARY KEY (`OrderId`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `Order`
+--
+ALTER TABLE `Order`
+  MODIFY `OrderId` int NOT NULL AUTO_INCREMENT;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
