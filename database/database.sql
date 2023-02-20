@@ -1,15 +1,5 @@
 --VERONIKA CUSTOMER TABLE
 
-
--- phpMyAdmin SQL Dump
--- version 5.2.0
--- https://www.phpmyadmin.net/
---
--- Host: db
--- Generation Time: Feb 20, 2023 at 12:14 PM
--- Server version: 8.0.30
--- PHP Version: 8.0.19
-
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
