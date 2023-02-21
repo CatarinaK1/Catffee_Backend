@@ -33,7 +33,6 @@ CREATE TABLE `Customer` (
   `PhoneNumber` int NOT NULL,
   `Email` varchar(60) NOT NULL,
   `TableDate` date NOT NULL,
-  `TotalSpent` int NOT NULL,
   `CustomerId` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
