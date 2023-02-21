@@ -3,7 +3,7 @@
 <?Php include('../css/index_style.css'); ?>
 </style>
    <section>
-    <button class = "reserveBtn" ><a href="../php/reserve.php">RESERVATION</div></a></button>
+    <button class = "reserveBtn" ><a href="../php/reservation.php">RESERVATION</div></a></button>
     <div class = "coverImage"><img src="../images/coverImagee.jpeg" alt="Cover Image"></div>
     </div>
 

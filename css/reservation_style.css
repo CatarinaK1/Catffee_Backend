@@ -1,0 +1,98 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+   }
+   
+   nav {
+   
+       background-color: #A4D8CC;
+       display: flex;
+       flex-wrap: wrap;
+       height: 123px;
+       justify-content: space-around;
+   }
+   
+   .logoText{
+       margin-left: 30px;
+       display: flex;
+       justify-content: flex-start;
+       align-items: center;
+       flex-grow: 1;
+   
+   }
+   
+    .navItem1{
+        width: 60px;
+        height: 60px;
+    }
+
+   .navItem1 img{
+        max-width: 100%;
+        max-height: 100%;
+   }
+   .navItem2{
+       margin-left: 30px;
+       font-size: 38px;
+       color: white;
+   }
+   
+   .navRest{
+       margin-right: 30px;
+       display: flex;
+       justify-content: flex-end;
+       align-items: center;
+       flex-grow: 1;
+   }
+   .navItem3{
+       font-size: 38px;
+       font-weight: bold;
+       color: #007777;
+       
+   }
+   .navItem3 a{
+       font-size: 32px;
+    font-weight: 400;
+    color: white 
+   }
+   .navItem4{
+       font-size: 32px;
+       color: white;
+       margin-left: 30px;
+   }
+   .navItem4 a{
+    font-size: 32px;
+    color: white;
+    margin-left: 30px;
+   }
+   .navItem5{
+       font-size: 32px;
+       color: white;
+       margin-left: 30px;
+   }
+
+   .navItem5 a{
+    font-size: 32px;
+    color: white;
+    margin-left: 30px;
+   }
+   .navItem6{
+       font-size: 32px;
+       color: white;
+       margin-left: 30px;
+   }
+
+   .navItem6 a{
+    font-size: 32px;
+    margin-left: 30px;
+    color: white
+}
+
+    a:link { text-decoration: none; }
+
+    a:visited { text-decoration: none; }
+
+    a:hover { text-decoration: none; }
+
+    a:active { text-decoration: none; }
+   
