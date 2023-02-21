@@ -4,8 +4,9 @@
 <?PHP include('../css/order_style.css'); ?> 
 </style>
 
-
+<div class = "section1">
 <h1> What are you craving for? </h1>
+    </div>
 
 
 
