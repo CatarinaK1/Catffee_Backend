@@ -2,11 +2,11 @@
 include "../php/header.php";
 ?>
 <style>
-<?PHP include('../css/reservation_style.css'); ?> 
+<?PHP include('../css/survey_style.css'); ?> 
 </style>
 
 
-
+<div class = "section1">
 		<h2>How would you rate your experience with us?</h2>
         <p>from not satisfied to very satisfied</p>
 
@@ -34,16 +34,16 @@ include "../php/header.php";
         <option value = "Social media"> Social media </option>
         <option value = "Other"> Other </option>
     </select><br>
+    </div>
 
-
-						
+	<div class = "section2">					
 	<h2>Additional Comments...</h2>
 		
 		<textarea id="comment" name="comment" placeholder="Enter your comments ..."></textarea>
         <br>
 	
 		<input type="submit" class="btn" name="submit" value="Submit"><br>
-	
+    </div>
 </form>
 
 
