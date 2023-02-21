@@ -1,4 +1,5 @@
-<?php $style = "menu_style"; $title = "Catffee: menu"; include "../php/header.php";?>
+
+<?php $style = "menu_style"; $title = "Catffee: menu"; include '../database/db.php'; include "../php/header.php";?>
    <section>
     
     <div class="container">
@@ -15,26 +16,15 @@
             <th><h2>Coffee</h2></th>
             <th><h2>Price</h2></th>
           </tr>
-          <tr>
-            <td>Latte</td>
-            <td>$4.50</td>
-          </tr>
-          <tr>
-            <td>Espresso</td>
-            <td>$3.50</td>
-          </tr>
-          <tr>
-            <td>Cappuccino</td>
-            <td>$4.50</td>
-          </tr>
-          <tr>
-            <td>Mocha</td>
-            <td>$5.00</td>
-          </tr>
-          <tr>
-            <td>American</td>
-            <td>$2.50</td>
-          </tr>
+          <?php
+  $menu_query = mysqli_query($connection,"SELECT * FROM menu WHERE category = 'Coffee' ");
+   while($menu_row = mysqli_fetch_array($menu_query)):
+   ?>
+     <tr>
+    <td><?php echo $menu_row['name']; ?></td>
+    <td><?php echo $menu_row['price'] . ' €'; ?></td>               
+      </tr>
+    <?php  endwhile; ?>
         </table>
       </div>
       <div class="Salads" style="flex: 1; padding: 10px;">
@@ -43,26 +33,15 @@
             <th><h2>Salads</h2></th>
             <th><h2>Price</h2></th>
           </tr>
-          <tr>
-            <td>Caesar</td>
-            <td>$7.00</td>
-          </tr>
-          <tr>
-            <td>Spinach</td>
-            <td>$6.00</td>
-          </tr>
-          <tr>
-            <td>Greek</td>
-            <td>$8.50</td>
-          </tr>
-          <tr>
-            <td>Caprese</td>
-            <td>$6.50</td>
-          </tr>
-          <tr>
-            <td>Cobb</td>
-            <td>$8.00</td>
-          </tr>
+          <?php
+  $menu_query = mysqli_query($connection,"SELECT * FROM menu WHERE category = 'Salads' ");
+   while($menu_row = mysqli_fetch_array($menu_query)):
+   ?>
+     <tr>
+    <td><?php echo $menu_row['name']; ?></td>
+    <td><?php echo $menu_row['price'] . ' €'; ?></td>               
+      </tr>
+    <?php  endwhile; ?>
         </table>
       </div>
     </div>
@@ -74,26 +53,15 @@
             <th><h2>Snacks</h2></th>
             <th><h2>Price</h2></th>
           </tr>
-          <tr>
-            <td>Pretzels</td>
-            <td>$2.50</td>
-          </tr>
-          <tr>
-            <td>Muffin</td>
-            <td>$2.00</td>
-          </tr>
-          <tr>
-            <td>Popcorn</td>
-            <td>$3.00</td>
-          </tr>
-          <tr>
-            <td>Croissant</td>
-            <td>$2.50</td>
-          </tr>
-          <tr>
-            <td>Donut</td>
-            <td>$1.50</td>
-          </tr>
+          <?php
+  $menu_query = mysqli_query($connection,"SELECT * FROM menu WHERE category = 'Snacks' ");
+   while($menu_row = mysqli_fetch_array($menu_query)):
+   ?>
+     <tr>
+    <td><?php echo $menu_row['name']; ?></td>
+    <td><?php echo $menu_row['price'] . ' €'; ?></td>               
+      </tr>
+    <?php  endwhile; ?>
         </table>
       </div>
       <div class="Desserts" style="flex: 2; padding: 10px;">
@@ -102,27 +70,15 @@
             <th><h2>Desserts</h2></th>
             <th><h2>Price</h2></th>
           </tr>
-          <tr>
-            <td>Cake</td>
-            <td>$5.50</td>
-          </tr>
-          <tr>
-            <td>Cheesecake</td>
-            <td>$5.00</td>
-          </tr>
-          <tr>
-            <td>Pie</td>
-            <td>$4.00</td>
-          </tr>
-          <tr>
-            <td>Chocolate Cake</td>
-            <td>$6.50</td>
-          </tr>
-          <tr>
-            <td>Brownie</td>
-            <td>$3.50</td>
-          </tr>
-          
+          <?php
+  $menu_query = mysqli_query($connection,"SELECT * FROM menu WHERE category = 'Desserts' ");
+   while($menu_row = mysqli_fetch_array($menu_query)):
+   ?>
+     <tr>
+    <td><?php echo $menu_row['name']; ?></td>
+    <td><?php echo $menu_row['price'] . ' €'; ?></td>               
+      </tr>
+    <?php  endwhile; ?>
         </table>
       </div>
     </div>
@@ -133,26 +89,15 @@
             <th><h2>Smoothies</h2></th>
             <th><h2>Price</h2></th>
           </tr>
-          <tr>
-            <td>Strawberry</td>
-            <td>$5.00</td>
-          </tr>
-          <tr>
-            <td>Mango Peach</td>
-            <td>$5.50</td>
-          </tr>
-          <tr>
-            <td>Blueberry</td>
-            <td>$4.50</td>
-          </tr>
-          <tr>
-            <td>Pineapple</td>
-            <td>$4.00</td>
-          </tr>
-          <tr>
-            <td>Banana</td>
-            <td>$4.50</td>
-          </tr>
+          <?php
+  $menu_query = mysqli_query($connection,"SELECT * FROM menu WHERE category = 'Smoothies' ");
+   while($menu_row = mysqli_fetch_array($menu_query)):
+   ?>
+     <tr>
+    <td><?php echo $menu_row['name']; ?></td>
+    <td><?php echo $menu_row['price'] . ' €'; ?></td>               
+      </tr>
+    <?php  endwhile; ?>
         </table>
       </div>
       <div class="Beverages" style="flex: 2; padding: 10px;">
@@ -161,26 +106,15 @@
             <th><h2>Beverages</h2></th>
             <th><h2>Price</h2></th>
           </tr>
-          <tr>
-            <td>Soda</td>
-            <td>$2.50</td>
-          </tr>
-          <tr>
-            <td>Iced Tea</td>
-            <td>$2.00</td>
-          </tr>
-          <tr>
-            <td>Lemonade</td>
-            <td>$2.50</td>
-          </tr>
-          <tr>
-            <td>Milkshake</td>
-            <td>$3.50</td>
-          </tr>
-          <tr>
-            <td>Juice</td>
-            <td>$3.00</td>
-          </tr>
+          <?php
+  $menu_query = mysqli_query($connection,"SELECT * FROM menu WHERE category = 'Beverages' ");
+   while($menu_row = mysqli_fetch_array($menu_query)):
+   ?>
+     <tr>
+    <td><?php echo $menu_row['name']; ?></td>
+    <td><?php echo $menu_row['price'] . ' €'; ?></td>               
+      </tr>
+    <?php  endwhile; ?>
         </table>
 
         
