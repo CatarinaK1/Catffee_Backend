@@ -1,3 +1,4 @@
+
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -100,7 +101,7 @@ a:active { text-decoration: none; }
 
    
    section{
-       height: 1571px;
+       height: 1971px;
        background-color: #FFC1C1;
 
    }
@@ -115,7 +116,9 @@ a:active { text-decoration: none; }
 
    }
    
+   /*#6bc8b2; #FFC1C1*/
    .section1{
+
        background-color: #6bc8b2;
        height: 457px;
        display: flex;
@@ -144,6 +147,28 @@ a:active { text-decoration: none; }
        
       
    }
+
+   .section3{
+
+    background-color: #6bc8b2;
+    height: 457px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.section3 h1{
+    font-size: 40px;
+    color: #007777;
+}
+.section3 p{
+    color: #000000;
+    font-size: 20px;
+    margin-left: 400px;
+    margin-right: 400px;
+}
 
    
 

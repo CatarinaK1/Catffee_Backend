@@ -1,4 +1,12 @@
-<?php $style = "contact_style"; $title = "Catffee: contact"; include "../php/header.php";?>
+<?php $style = "contact_style"; $title = "Catffee: contact"; include "../php/header.php";
+?>
+
+<style>
+<?PHP include('../layout/contact_style.css'); ?> 
+</style>
+
+<!-- </?php include('../layout/contact_style.css'); ?>-->
+
    <section>
     <img src = "../images/pexels-photo-5490818.jpeg"  div class = "coverImage">
     </div>
@@ -26,6 +34,42 @@
         </div>
         
     </div>
+
+    <div class = "section3">
+     <h1>Join our newsletter!</h1>
+     <p>
+        Get to know our new items before everyone! <br>
+    </p>
+
+    <form method = "post" action=""> 
+    <input type = "text" name="fname" placeholder="First name" required>
+    <input type = "text" name="email" placeholder="Email" required>
+
+    <input type = "submit" value= "Submit" name="submit">
+   </form>
+   
+    <?php 
+   if (isset($_POST['submit'])){
+
+    $fname = $_POST['fname'];
+    $email = $_POST['email'];
+
+
+    include '../database/db.php';
+    $sql = " insert into Newsletter(fname, customerEmail )
+    values ('$fname','$email')";
+    
+    if ($connection -> query($sql) === TRUE){
+        echo "Thank you!";
+
+    }
+    else {
+        echo "Error: " . $connection -> error;
+    }
+
+   }
+
+    ?></div>
 
    </section>
    <?php include "../php/footer.php";?>
