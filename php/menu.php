@@ -1,5 +1,5 @@
 
-<?php $style = "menu_style"; $title = "Catffee: menu"; include '../database/db.php'; include "../php/header.php";?>
+<?php $style = "menu_style"; $title = "Catffee: menu"; include '../database/menu_db.php'; include "../php/header.php";?>
    <section>
     
     <div class="container">
