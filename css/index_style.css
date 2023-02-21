@@ -99,6 +99,30 @@ body{
    section{
        height: 2892px;
    }
+   .reserveBtn{
+  position: absolute;
+  text-align: center;
+       
+       background-color:#FFC1C1;
+       border-style: solid;
+       border-color: #000000;
+       border-width: 1px;
+       height: 72px; 
+       width: 335px;
+       margin-top: 300px;
+       margin-left: 672.5px;
+       
+  
+   }
+   .reserveBtn a{
+    text-align: center;
+    font-size: 40px;
+    font-weight: lighter;
+    background-color:#FFC1C1;
+    font-weight:bold;
+    color:#007777;
+}
+
    .coverImage{
      zoom: 120%;
      overflow: hidden;

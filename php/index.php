@@ -1,5 +1,9 @@
 <?php $style = "index_style"; $title = "Catffee: aboutus"; include "../php/header.php";?>
+<style>
+<?Php include('../css/index_style.css'); ?>
+</style>
    <section>
+    <button class = "reserveBtn" ><a href="../php/reserve.php">RESERVATION</div></a></button>
     <div class = "coverImage"><img src="../images/coverImagee.jpeg" alt="Cover Image"></div>
     </div>
 
