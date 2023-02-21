@@ -41,7 +41,7 @@
    }
 
     ?>
-    <h1>Do you also wanna make order?</h1>
+    <h1>Would you also like to make an order?</h1>
 
 <button class = "makeOrder" ><a href="../php/order.php">Make Order</div></a></button>
 
