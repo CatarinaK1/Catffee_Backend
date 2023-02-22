@@ -1,7 +1,17 @@
 <?php $style = "index_style"; $title = "Catffee: aboutus"; include "../php/header.php";?>
 <style>
 <?Php include('../css/index_style.css'); ?>
+
+
+
 </style>
+
+<script>
+  
+    window.alert("Please answer the survey at the bottom of the page");
+    
+    </script>
+
    <section><button class = "reserveBtn" ><a href="../php/reservation.php">RESERVATION</div></a></button>
     
     <div class = "coverImage"><img src="../images/coverImagee.jpeg" alt="Cover Image"></div>
@@ -46,7 +56,14 @@
           <p>Sunday closed</p>
         </div>
           <p class = "openingText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error quo labore minus suscipit adipisci commodi.</p>
+        
+        
+          <button class = "button" ><a href="../php/survey.php">Survey</a></button>
+        
         </div>
 
+
+
+        
    </section>
    <?php include "../php/footer.php";?>

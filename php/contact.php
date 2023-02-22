@@ -5,7 +5,19 @@
 <?PHP include('../layout/contact_style.css'); ?> 
 </style>
 
+<script> 
+<?PHP include('../database/javaScript'); ?> 
+</script>
+
 <!-- </?php include('../layout/contact_style.css'); ?>-->
+
+
+
+<script>
+  
+    window.alert("Please answer the survey at the bottom of the page");
+    
+    </script>
 
    <section>
     <img src = "../images/pexels-photo-5490818.jpeg"  div class = "coverImage">
@@ -59,6 +71,7 @@
     $sql = " insert into Newsletter(fname, customerEmail )
     values ('$fname','$email')";
     
+    
     if ($connection -> query($sql) === TRUE){
         echo "Thank you!";
 
@@ -69,7 +82,13 @@
 
    }
 
-    ?></div>
+    ?>
+<br>
+
+    <button class = "button" ><a href="../php/survey.php">Survey</a></button>
+    </div>
+
+      
 
    </section>
    <?php include "../php/footer.php";?>
