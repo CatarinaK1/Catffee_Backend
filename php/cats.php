@@ -1,4 +1,11 @@
 <?php $style = "cats_style"; $title = "Catffee: cats"; include "../php/header.php";?>
+
+<script>
+  
+    window.alert("Please answer the survey at the bottom of the page");
+    
+    </script>
+
    <section>
     <div class = "coverImage">
        <img class="img-fluid" src="../images/background7.jpeg" alt="coverImage">

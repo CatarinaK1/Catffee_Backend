@@ -1,7 +1,17 @@
 <?php $style = "index_style"; $title = "Catffee: aboutus"; include "../php/header.php";?>
 <style>
 <?Php include('../css/index_style.css'); ?>
+
+
+
 </style>
+
+<script>
+  
+    window.alert("Please answer the survey at the bottom of the page");
+    
+    </script>
+    
    <section><button class = "reserveBtn" ><a href="../php/reservation.php">RESERVATION</div></a></button>
     
     <div class = "coverImage"><img src="../images/coverImagee.jpeg" alt="Cover Image"></div>
