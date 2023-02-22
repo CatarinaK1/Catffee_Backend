@@ -24,13 +24,11 @@ include "../php/header.php";
 			<input type="radio" name="rate" id="radio5"  value="5">
 			<label for="radio5">5</label>
 		</div>
-        
-		
-		<h2>Where did you hear about us?</h2>
-		
-			
+</div>      
        
-    
+<div class = "section2">
+  <h2>Where did you hear about us?</h2>
+  <br>
     <select name="how">
         <option value = "Newsletter"> Newsletter </option>
         <option value = "Advertisment"> Advertisment </option>
@@ -39,7 +37,8 @@ include "../php/header.php";
     </select><br>
 </div>
 
-	<div class = "section2">					
+
+<div class="section3">
 	<h2>Additional Comments...</h2>
 		
 		<textarea id="comment" name="comment" placeholder="Enter your comments ..."></textarea>

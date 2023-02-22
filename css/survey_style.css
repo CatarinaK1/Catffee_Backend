@@ -114,21 +114,15 @@ body{
  
     }
     
-    .section1{
-        background-color: #6bc8b2;
-        height: 357px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+   
     .section1 {
         background-color: #6bc8b2;
-        height: 357px;
+        height: 340px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        align-content: center;
     }
 
     .section1 h1{
@@ -144,14 +138,24 @@ body{
     
     .section2{
         background-color:#FFC1C1;
-        height: 357px;
+        height: 340px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        justify-content: center;
+        align-content: center;
         
        
     }
-    
+    .section3{
+        background-color:#6bc8b2;
+        height: 340px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
   
-
