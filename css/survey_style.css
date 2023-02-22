@@ -122,6 +122,15 @@ body{
         justify-content: center;
         align-items: center;
     }
+    .section1 {
+        background-color: #6bc8b2;
+        height: 357px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .section1 h1{
         font-size: 40px;
         color: #007777;
@@ -143,3 +152,6 @@ body{
         
        
     }
+    
+  
+

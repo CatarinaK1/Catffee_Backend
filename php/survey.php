@@ -37,7 +37,7 @@ include "../php/header.php";
         <option value = "Social media"> Social media </option>
         <option value = "Other"> Other </option>
     </select><br>
-    </div>
+</div>
 
 	<div class = "section2">					
 	<h2>Additional Comments...</h2>
@@ -46,11 +46,7 @@ include "../php/header.php";
         <br>
 	
 		<input type="submit" class="btn" name="submit" value="Submit"><br>
-    </div>
-</form>
-
-
-<?php 
+        <?php 
    if (isset($_POST['submit'])){
 
     $how = $_POST['how'];
@@ -74,6 +70,9 @@ include "../php/header.php";
   }
 
 ?></div>
+</form>
+
+
 
 <?php include "../php/footer.php";
 ?>
