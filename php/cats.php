@@ -68,6 +68,7 @@
             <img class="img-fluid" src="../images/cat9.jpeg" alt="CHOCO" width="383" height="255">
         </div>
         </div>
+        <button class = "button" ><a href="../php/survey.php">Survey</a></button>
     </div>
 
    </section>

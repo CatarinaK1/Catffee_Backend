@@ -2,15 +2,11 @@
 <?php $style = "menu_style"; $title = "Catffee: menu"; include '../database/db.php'; include "../php/header.php";?>
    <section>
     
-   <script>
-  
-  window.alert("Please answer the survey at the bottom of the page");
-  
-  </script>
 
     <div class="container">
       <img src = "../images/CoffeCat.jpg"  div class = "coverImage" style="width:100%">
       <div class="text"> What are you craving for?</div>
+      
     </div>
 
 
@@ -125,9 +121,11 @@
 
         
       </div>
+
     </div>
+    
     
     </section>
     
 
-    <?php include "../php/footer.php";?>
+    <?php include "../php/footer.php"; ?>
