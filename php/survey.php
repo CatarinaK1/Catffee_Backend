@@ -29,7 +29,7 @@ include "../php/header.php";
 <div class = "section2">
   <h2>Where did you hear about us?</h2>
   <br>
-    <select name="how">
+    <select name="how" style="width: 155px; height:35px;">
         <option value = "Newsletter"> Newsletter </option>
         <option value = "Advertisment"> Advertisment </option>
         <option value = "Social media"> Social media </option>
@@ -43,8 +43,8 @@ include "../php/header.php";
 		
 		<textarea id="comment" name="comment" placeholder="Enter your comments ..."></textarea>
         <br>
-	
-		<input type="submit" class="btn" name="submit" value="Submit"><br>
+	<br>
+		<input type="submit" class="btn" name="submit" value="Submit" style="width: 130px; height:35px;"><br>
         <?php 
    if (isset($_POST['submit'])){
 
@@ -67,6 +67,7 @@ include "../php/header.php";
     }
 
   }
+
 
 ?></div>
 </form>
