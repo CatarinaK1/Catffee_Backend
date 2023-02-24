@@ -85,7 +85,7 @@
     ?>
 <br>
 
-    <button class = "button" ><a href="../php/survey.php">Survey</a></button>
+    <button class = "button" name = "button"><a href="../php/survey.php">Survey</a></button>
     </div>
 
       

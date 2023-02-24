@@ -101,8 +101,9 @@ body{
     border-color: #000000;
     border-width: 1px;
     height: 52px; 
-    width: 235px;
-    margin-top: 70px;
+    width: 135px;
+    margin-top: 20px;
+    padding: 5px 14px;
   }
 
   .button a{
@@ -111,9 +112,11 @@ body{
     font-weight: lighter;
     background-color:#FFC1C1;
     height: 52px; 
-    width: 235px;
+    width: 135px;
     font-weight:bold;
     color:#007777;
+    padding: 5px 14px;
+
 }
  
  
@@ -121,7 +124,6 @@ body{
 
  .button a:visited { text-decoration: none; }
 
- .SeeMenuBtn a:hover { text-decoration: none; }
 
  .button a:active { text-decoration: none; }
   

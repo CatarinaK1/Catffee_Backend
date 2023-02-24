@@ -326,9 +326,11 @@ body{
     border-color: #000000;
     border-width: 1px;
     height: 52px; 
-    width: 235px;
-    margin-top: 70px;
+    width: 135px;
+    margin-top: 20px;
+    padding: 5px 14px;
   }
+
 
   .button a{
     text-align: center;
