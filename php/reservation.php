@@ -4,9 +4,15 @@
 <?PHP include('../css/reservation_style.css'); ?> 
 </style>
 
+
+
+
+
+
+
 <section>
     <h1>Please fill the form</h1>
-<form method = "post" action=""> 
+<form name = "reservationForm" method = "post" onsubmit="return validateform()" action=""> 
     <input type = "text" name="fname" placeholder="First name" required>
     <input type = "text" name="lname" placeholder="Last name" required>
     <input type = "text" name="email" placeholder="Email" required>
@@ -24,23 +30,33 @@
     $email = $_POST['email'];
     $tableDate = $_POST['tableDate'];
 
+    // CustomerID = $_COOKIE['latest_customer']
+
     include '../database/db.php';
     $sql = "insert into Customer (FirstName, LastName, PhoneNumber, Email, TableDate)
     values ('$fname','$lname','$phone_number','$email', '$tableDate')";
     
     if ($connection -> query($sql) === TRUE){
-        echo "Thank you!";
+        echo "Thank you ".$fname." ".$lname." for your reservation";
+
+        //$last_id = $connection->insert_id; 
+        //session_start();
+        //$_SESSION["last_customer_id"] = $last_id;
+        //setcookie("latest_customer", $last_id);
+        //echo $last_id;
        
     }
     else {
         echo "Error: " . $connection -> error;
     }
-
-
-
    }
 
-    ?>
+       
+?>
+
+
+
+
     <h1>Would you also like to make an order?</h1>
 
 <button class = "makeOrder" ><a href="../php/order.php">Make Order</div></a></button>
