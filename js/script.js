@@ -27,8 +27,8 @@ function validateform(){
 
       //validating phone number 
     let phone =(document.reservationForm.phone_number.value).trim();
-    if (phone==null || phone==""){  
-        alert("Email can't be blank");  
+    if (phone.toString().length<10){  
+        alert("Phone number can not be less than 10 digits");  
         return false;  
       }
 

@@ -11,15 +11,20 @@
 
 
 <section>
+    <div class = "section1">
     <h1>Please fill the form</h1>
+    <div class = "form">
 <form name = "reservationForm" method = "post" onsubmit="return validateform()" action=""> 
     <input type = "text" name="fname" placeholder="First name" required>
     <input type = "text" name="lname" placeholder="Last name" required>
     <input type = "text" name="email" placeholder="Email" required>
     <input type = "number" name="phone_number" placeholder="Phone Number" required>
-    <input type = "date" name="tableDate" placeholder="Table Date" required>
-    <input type = "submit" value= "Submit" name="submit">
+    <input type = "date" name="tableDate" placeholder="Table Date" required><br>
+    <input type = "submit" value= "Reserve" name="submit">
    </form>
+</div>
+
+</div>
    
     <?php 
    if (isset($_POST['submit'])){
@@ -55,11 +60,12 @@
 ?>
 
 
-
+     <div class = "section2">
 
     <h1>Would you also like to make an order?</h1>
 
 <button class = "makeOrder" ><a href="../php/order.php">Make Order</div></a></button>
+</div>
 
    </section>
    <?php include "../php/footer.php";?>
