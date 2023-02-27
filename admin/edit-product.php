@@ -9,7 +9,7 @@ $productRow = mysqli_fetch_array($getProduct);
  ?>
 
 
-    <form style=" text-align: center;" method="POST" action="actions.php?edit-product=<?php echo $id ?>" method="POST">
+    <form style=" text-align: center;" method="POST" action="actions.php?edit-product=<?php echo $id ?>" method="POST" enctype="multipart/form-data">
     <input type="text" name="name" class="form-control" value="<?php echo $productRow['name']; ?>" placeholder=" Name"><br><br>
     <input name="price" type="decimal(5,2)" class="form-control" style="margin-left: 14px;" size="60" value="<?php  echo $productRow['price'] ?>" placeholder="Price"><br><br>
     select category 
@@ -20,28 +20,10 @@ $productRow = mysqli_fetch_array($getProduct);
         <option value="Desserts"> Desserts </option>
         <option value="Smoothies"> Smoothies </option>
         <option value="Beverages"> Beverages </option>
-
     </select> <br><br>
     <input type="submit" value="Submit"  name="submit" >
 </form>
 
-<?php
-if (isset($_POST['submit'])){
-    $name = $_POST['name'];
-    $price = $_POST['price'];
-    $category = $_POST['category'];
-    include '../database/db.php';
-    $sql = "insert into menu (name, category, price)
-    values ('$name', '$category', '$price')";
-
-    if ($connection ->query($sql)=== TRUE){
-        echo "Your information is added successfully";
-    }
-    else {
-         echo "Error: ". $connect-> $error;
-        }
-}
-?>
 
 
 
