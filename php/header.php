@@ -21,8 +21,8 @@
 <body>
    <nav>
     <div class = "logoText">
-     <div class = "navItem1"><img src="../images/logo.png" alt="Logo"></div>
-     <div class = "navItem2">Catffee</div>
+     <div class = "navItem1"><a href="../php/index.php" style="color: white"><img src="../images/logo.png" alt="Logo"></a></div>
+     <div class = "navItem2"><a href="../php/index.php" style="color: white">Catffee</a></div>
     </div>
     <div class = "navRest">
       <div class = "navItem3"><a href="../php/index.php">About us</a></div>
