@@ -17,11 +17,11 @@ $productRow = mysqli_fetch_array($getProduct);
     <?php
     $categories = array('Coffee', 'Salads', 'Snacks', 'Desserts', 'Smoothies', 'Beverages');
     foreach ($categories as $category) {
-        if ($category == $productRow['category']) {
-            echo '<option value="' . $category . '" selected="selected">' . $category . '</option>';
+    if ($category == $productRow['category']) {
+        echo '<option value="' . $category . '" selected="selected">' . $category . '</option>';
         } else {
-            echo '<option value="' . $category . '">' . $category . '</option>';
-        }
+        echo '<option value="' . $category . '">' . $category . '</option>';
+    }
     }
     ?>
 </select> <br><br>
