@@ -71,10 +71,10 @@
                                         echo $product_row['category']; ?></td>
                                     <td><?php echo $product_row['price']; ?></td>
                                     <td>
-                                        <a href="actions.php?delete_product=<?php echo $product_row['itemid']; ?>" class="btn btn-danger">Delete</a>
+                                        <a href="actions.php?delete_product&itemid=<?php echo $product_row['itemid']; ?>" >Delete</a>
                                     </td>
                                     <td>
-                                        <a href="index.php?edit-product&itemid=<?php echo $product_row['itemid']; ?>" class="btn btn-warning">Edit</a>
+                                        <a href="index.php?edit-product&itemid=<?php echo $product_row['itemid']; ?>" >Edit</a>
                                     </td>
                                 </tr>
 
