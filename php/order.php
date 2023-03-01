@@ -13,32 +13,49 @@ include '../database/db.php';
 <h1>Hi! what are you craving for? </h1>
     </div>
 
-   
-   <h2> Thank you for your order </h2>
+    <div class = "section2">  
+    <?php
 
-   <?php
+
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    //mysqli_report(MYSQLI_REPORT_ALL);
+    
     $quan = $_POST['quan'];
+    $sql = "INSERT INTO `Order` (FirstName) VALUES (?)";
+    $stmt= mysqli_prepare($connection, $sql);
+  
+    mysqli_stmt_bind_param($stmt, 's', $_POST['fname']);
+    mysqli_stmt_execute($stmt);
+    $orderId = mysqli_insert_id($connection) ;
+
+
     foreach ($quan as $itemid => $itemQuantity) {
-
-        $sql = "INSERT INTO Order (FirstName) VALUES (?)";
-        $stmt= mysqli_prepare($connection, $sql);
-        //var_dump($stmt);
-        mysqli_stmt_bind_param($stmt, 's', $_POST['fname']);
-        mysqli_stmt_execute($stmt);
-        $orderId = mysqli_insert_id($connection) ;
-
-        mysqli_query($connection, $sql);
+    
 
         if(!empty($itemQuantity)){
-            echo "$itemid : $itemQuantity <br>";
+           // echo "$itemid : $itemQuantity <br>";
 
-            $sql = " insert into order (fname )
-            values ('')";
+            $stmt= mysqli_prepare($connection, "Select price FROM `menu` WHERE itemid = ?");
+            mysqli_stmt_bind_param($stmt, 'i', $itemid );
+            mysqli_stmt_execute($stmt);
+            $a = mysqli_stmt_get_result($stmt);
+            $b =mysqli_fetch_row($a)[0];
+           // var_dump($b);
+            
+            $sql = "INSERT INTO `OrderItem` (OrderId, price, quantity, ProductId) VALUES (?,?,?,?)";
+            $stmt= mysqli_prepare($connection, $sql);
+          
+            mysqli_stmt_bind_param($stmt, 'isii', $orderId, $b, $itemQuantity , $itemid);
+            mysqli_stmt_execute($stmt);
         }
     }
-}
+?>
+    <body> <h1> Thank you!</h1>  </body>
+<?php } else {
+    # code...
+
 
 
 
@@ -49,6 +66,7 @@ $result = mysqli_query($connection, $sql) or trigger_error(mysqli_error($connect
 ?>
 
 <body>
+    
     <div id='container'>
 
         <a href='<?php echo $_SERVER['PHP_SELF']; ?>' ?clear=1> Clear cart</a>
@@ -92,27 +110,6 @@ $result = mysqli_query($connection, $sql) or trigger_error(mysqli_error($connect
         <input type='submit' value= 'order'>
         </form>
     </div>
-        </body >
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        </body > <?php } ?>  </div>
    
 <?php include "../php/footer.php";?>
