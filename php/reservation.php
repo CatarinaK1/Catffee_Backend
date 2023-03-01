@@ -1,5 +1,17 @@
+<?php 
+session_start();
+if(isset($_POST['submit'])){
+$name = $_POST['fname'];
+$_SESSION['name'] = $name;
+echo "<script> location.href = 'order.php' </script>";
+}
+
+?>
+
 <?php $style = "reservation_style"; $title = "Catffee: reservation"; include "../php/header.php";
 ?>
+
+
 <style>
 <?PHP include('../css/reservation_style.css'); ?> 
 </style>
@@ -20,7 +32,7 @@
     <input type = "text" name="email" placeholder="Email" required>
     <input type = "number" name="phone_number" placeholder="Phone Number" required>
     <input type = "date" name="tableDate" placeholder="Table Date" required><br>
-    <input type = "submit" value= "Reserve" name="submit">
+    <input type = "submit" value= "Reserve " name="submit">
    </form>
 </div>
 
@@ -41,16 +53,21 @@
     $sql = "insert into Customer (FirstName, LastName, PhoneNumber, Email, TableDate)
     values ('$fname','$lname','$phone_number','$email', '$tableDate')";
     
-    if ($connection -> query($sql) === TRUE){
-        echo "Thank you ".$fname." ".$lname." for your reservation";
+    //if ($connection -> query($sql) === TRUE){
+        if (mysqli_query($connection, $sql)){
+            echo "Thank you ".$fname." ".$lname." for your reservation";
+        }
+        
 
         //$last_id = $connection->insert_id; 
         //session_start();
         //$_SESSION["last_customer_id"] = $last_id;
         //setcookie("latest_customer", $last_id);
         //echo $last_id;
+
+
        
-    }
+    
     else {
         echo "Error: " . $connection -> error;
     }
@@ -58,6 +75,8 @@
 
        
 ?>
+
+
 
 
      <div class = "section2">

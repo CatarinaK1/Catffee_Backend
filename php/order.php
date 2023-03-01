@@ -1,3 +1,8 @@
+<?php 
+session_start();
+$displayname = $_SESSION['name'];
+?>
+
 <?php $style = "order_style"; $title = "Catffee: order"; include "../php/header.php";
 ?>
 <style>
@@ -5,12 +10,12 @@
 </style>
 
 <div class = "section1">
-<h1> What are you craving for? </h1>
+<h1>Hi<?php echo " " .$displayname;?>! what are you craving for? </h1>
     </div>
 
     <form method = "post" action=""> 
     
-    <select name="Snacks" placeholder="snacks>
+    <select name="Snacks" placeholder="snacks">
         <option value = "Pretzels"> Pretzels </option>
         <option value = "Muffin"> Muffin </option>
         <option value = "None"> None </option>
