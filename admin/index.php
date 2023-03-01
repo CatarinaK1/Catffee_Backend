@@ -69,7 +69,7 @@
                                     <td><?php echo $product_row['name']; ?></td>
                                     <td><?php
                                         echo $product_row['category']; ?></td>
-                                    <td><?php echo $product_row['price']; ?></td>
+                                    <td><?php echo $product_row['price'] . ' €';?></td>
                                     <td>
                                         <a href="actions.php?delete_product&itemid=<?php echo $product_row['itemid']; ?>" >Delete</a>
                                     </td>
