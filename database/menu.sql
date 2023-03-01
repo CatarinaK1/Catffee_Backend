@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: db
--- Generation Time: Feb 21, 2023 at 12:40 PM
+-- Generation Time: Feb 28, 2023 at 08:52 PM
 -- Server version: 8.0.30
 -- PHP Version: 8.0.19
 
@@ -49,11 +49,26 @@ INSERT INTO `menu` (`itemid`, `name`, `category`, `price`) VALUES
 (8, 'Cheesecake', 'Desserts', '5.00'),
 (9, 'Strawberry', 'Smoothies', '5.00'),
 (10, 'Blueberry', 'Smoothies', '4.50'),
-(11, 'Soda', 'Beverages', '2.50'),
 (12, 'Lemonade', 'Beverages', '3.00'),
 (13, 'Milkshake', 'Beverages', '3.50'),
-(14, 'Iced Tea', 'Beverages', '2.00'),
-(15, 'Mango Peach', 'Smoothies', '5.50');
+(15, 'Mango Peach', 'Smoothies', '5.50'),
+(18, 'Juice', 'Beverages', '3.50'),
+(19, 'Banana', 'Smoothies', '4.50'),
+(20, 'Cappuccino', 'Coffee', '4.50'),
+(21, 'Mocha', 'Coffee', '5.00'),
+(22, 'American', 'Coffee', '2.50'),
+(23, 'Greek', 'Salads', '8.50'),
+(24, 'Caprese', 'Salads', '6.50'),
+(25, 'Cobb', 'Salads', '8.00'),
+(26, 'Popcorn', 'Snacks', '3.00'),
+(27, 'Croissant', 'Snacks', '2.50'),
+(28, 'Donut', 'Snacks', '2.00'),
+(29, 'Pie', 'Desserts', '4.00'),
+(30, 'Chocolate Cake', 'Desserts', '6.50'),
+(31, 'Brownie', 'Desserts', '3.50'),
+(32, 'Pineapple', 'Smoothies', '4.00'),
+(33, 'Iced Tea', 'Beverages', '2.00'),
+(34, 'Soda', 'Beverages', '2.00');
 
 --
 -- Indexes for dumped tables
@@ -73,7 +88,7 @@ ALTER TABLE `menu`
 -- AUTO_INCREMENT for table `menu`
 --
 ALTER TABLE `menu`
-  MODIFY `itemid` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `itemid` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

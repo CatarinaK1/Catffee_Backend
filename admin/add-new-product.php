@@ -5,14 +5,14 @@ $title = "Add New Cat";
     <input type="text" name="name" placeholder="Name" required ><br><br>
     <input type="decimal(5,2)" name="price" placeholder="Price" required ><br><br>
     select category 
-    <select name="category";>
-        <option value="Coffee"> Coffee </option>
-        <option value="Salads"> Salads </option>
-        <option value="Snacks"> Snacks </option>
-        <option value="Desserts"> Desserts </option>
-        <option value="Smoothies"> Smoothies </option>
-        <option value="Beverages"> Beverages </option>
-    </select> <br><br>
+    <select name="category" >
+    <?php
+    $categories = array('Coffee', 'Salads', 'Snacks', 'Desserts', 'Smoothies', 'Beverages');
+    foreach ($categories as $category) {  
+            echo '<option value="' . $category . '">' . $category . '</option>';
+    }
+    ?>
+</select> <br><br>
     <input type="submit" value="Submit"  name="submit" >
 </form>
 
