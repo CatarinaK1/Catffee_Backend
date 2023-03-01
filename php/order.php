@@ -1,6 +1,5 @@
 <?php 
 session_start();
-$displayname = $_SESSION['name'];
 include '../database/db.php';
 ?>
 
@@ -11,7 +10,7 @@ include '../database/db.php';
 </style>
 
 <div class = "section1">
-<h1>Hi<?php echo " " .$displayname;?>! what are you craving for? </h1>
+<h1>Hi! what are you craving for? </h1>
     </div>
 
    
