@@ -107,16 +107,17 @@ body{
        border-style: solid;
        border-color: #000000;
        border-width: 1px;
-       height: 72px; 
-       width: 335px;
-       margin-top: 300px;
-       margin-left: 672.5px;
+       height: 52px; 
+       width: 200px;
+       margin-top: 600px;
+       margin-left: 40px;
        
   
    }
    .reserveBtn a{
     text-align: center;
-    font-size: 40px;
+    font-size: 20px;
+    letter-spacing: 1px;
     font-weight: lighter;
     background-color:#FFC1C1;
     font-weight:bold;
