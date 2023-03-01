@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $sql = "INSERT INTO Order (FirstName) VALUES (?)";
         $stmt= mysqli_prepare($connection, $sql);
-        var_dump($stmt);
+        //var_dump($stmt);
         mysqli_stmt_bind_param($stmt, 's', $_POST['fname']);
         mysqli_stmt_execute($stmt);
         $orderId = mysqli_insert_id($connection) ;

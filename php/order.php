@@ -1,6 +1,7 @@
 <?php 
 session_start();
 $displayname = $_SESSION['name'];
+include '../database/db.php';
 ?>
 
 <?php $style = "order_style"; $title = "Catffee: order"; include "../php/header.php";
@@ -13,57 +14,86 @@ $displayname = $_SESSION['name'];
 <h1>Hi<?php echo " " .$displayname;?>! what are you craving for? </h1>
     </div>
 
-    <form method = "post" action=""> 
-    
-    <select name="Snacks" placeholder="snacks">
-        <option value = "Pretzels"> Pretzels </option>
-        <option value = "Muffin"> Muffin </option>
-        <option value = "None"> None </option>
-    </select><br>
-
-    <select name="Salads">
-        <option value = "Caesar"> Caesar </option>
-        <option value = "Spinach"> Spinach </option>
-        <option value = "None"> None </option>
-    </select><br>
-
-    <select name="Desserts">
-        <option value = "Cake"> Cake </option>
-        <option value = "Cheesecake"> Cheesecake </option>
-        <option value = "None"> None </option>
-    </select><br>
-
-    <select name="Bevearages">
-        <option value = "Soda"> Soda </option>
-        <option value = "Lemonade"> Lemonade </option>
-        <option value = "Milkshake"> Milkshake </option>
-        <option value = "Iced Tea"> Iced Tea </option>
-        <option value = "None"> None </option>
-        </select><br>
-
-    <select name="Coffee">
-        <option value = "Latte"> Latte </option>
-        <option value = "Espresso"> Espresso </option>
-        <option value = "None"> None </option>
-    </select><br>
-
-    <select name="Smoothies">
-        <option value = "Strawberry"> Strawberry </option>
-        <option value = "Blueberry"> Blueberry </option>
-        <option value = "Mango Peach"> Mango Peach </option>
-        <option value = "None"> None </option>
-    </select><br>
-
-    <input type="submit" value="Submit" name="submit" >
-   </form>
-
-
-
-   
    
    <h2> Thank you for your order </h2>
 
+   <?php
 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $quan = $_POST['quan'];
+    foreach ($quan as $itemid => $itemQuantity) {
+
+        $sql = "INSERT INTO Order (FirstName) VALUES (?)";
+        $stmt= mysqli_prepare($connection, $sql);
+        //var_dump($stmt);
+        mysqli_stmt_bind_param($stmt, 's', $_POST['fname']);
+        mysqli_stmt_execute($stmt);
+        $orderId = mysqli_insert_id($connection) ;
+
+        mysqli_query($connection, $sql);
+
+        if(!empty($itemQuantity)){
+            echo "$itemid : $itemQuantity <br>";
+
+            $sql = " insert into order (fname )
+            values ('')";
+        }
+    }
+}
+
+
+
+
+$sql = "select * from menu";
+
+$result = mysqli_query($connection, $sql) or trigger_error(mysqli_error($connection));
+?>
+
+<body>
+    <div id='container'>
+
+        <a href='<?php echo $_SERVER['PHP_SELF']; ?>' ?clear=1> Clear cart</a>
+        <h1> Order</h1>
+
+        <?php echo "<form action ='{$_SERVER['PHP_SELF']}' method='post' >" ?>
+       <label for = 'fname'>First name</label> <input type='text' name= 'fname' id='fname' >
+        <table>
+            <tr>
+                <th>Item </th>
+                <th> Price</th>
+                <th>Quantity </th>
+            </tr>
+
+            <?php
+            while ($row = mysqli_fetch_assoc($result)) {
+                echo "
+        <tr>
+            <td>
+            {$row['name']} <br>
+            </td>
+        
+                <td>
+                {$row['price']} <br>
+                </td>
+
+
+            <td>
+              
+                    <input type='text' name ='quan[{$row['itemid']}]'>
+                
+                    
+            </td>
+                
+        </tr>
+        ";
+            }
+            ?>
+
+        </table>
+        <input type='submit' value= 'order'>
+        </form>
+    </div>
+        </body >
 
 
 
