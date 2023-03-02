@@ -138,8 +138,8 @@ body{
         background-color:#FFC1C1;
         height: 657px;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
         
        
@@ -152,8 +152,9 @@ body{
     .section2 th{
         color: #000000;
         font-size: 20px;
-        margin-left: 400px;
-        margin-right: 400px;
+        
     }
+
+    
     
     
