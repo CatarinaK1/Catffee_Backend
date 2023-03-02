@@ -1,5 +1,6 @@
 <?php 
 session_start();
+$displayname = $_SESSION['name'];
 include '../database/db.php';
 ?>
 
