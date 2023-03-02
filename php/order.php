@@ -74,7 +74,7 @@ $result = mysqli_query($connection, $sql) or trigger_error(mysqli_error($connect
         <h1> Order</h1>
 
         <?php echo "<form action ='{$_SERVER['PHP_SELF']}' method='post' >" ?>
-       <label for = 'fname'>First name</label> <input type='text' name= 'fname' id='fname' >
+       <!--<label for = 'fname'>First name</label> <input type='text' name= 'fname' id='fname' >-->
         <table>
             <tr>
                 <th>Item </th>

@@ -144,3 +144,16 @@ body{
         
        
     }
+
+    .section2 h1{
+        font-size: 40px;
+        color: #007777;
+    }
+    .section2 th{
+        color: #000000;
+        font-size: 20px;
+        margin-left: 400px;
+        margin-right: 400px;
+    }
+    
+    
