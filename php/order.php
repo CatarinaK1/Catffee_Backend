@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 ?>
-    <body> <h1> Thank you!</h1>  </body>
+    <body> <h1> Thank you! <br> You may pick up your order at the cafe</h1>  </body>
 <?php } else {
     # code...
 
@@ -70,7 +70,7 @@ $result = mysqli_query($connection, $sql) or trigger_error(mysqli_error($connect
     
     <div id='container'>
 
-        <a href='<?php echo $_SERVER['PHP_SELF']; ?>' ?clear=1> Clear cart</a>
+    
         <h1> Order</h1>
 
         <?php echo "<form action ='{$_SERVER['PHP_SELF']}' method='post' >" ?>
@@ -108,7 +108,9 @@ $result = mysqli_query($connection, $sql) or trigger_error(mysqli_error($connect
             ?>
 
         </table>
-        <input type='submit' value= 'order'>
+        <div class="container">  <input type='submit' value= 'order' name= "submit">
+       <p> <div class = "clear"><a href='<?php echo $_SERVER['PHP_SELF']; ?>' ?clear=1> Clear cart</a></div> </p>  
+     </div>
         </form>
     </div>
         </body > <?php } ?>  </div>
