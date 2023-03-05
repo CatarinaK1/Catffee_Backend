@@ -70,8 +70,12 @@
         </div>
         <br>
         <br>
-        <button class = "button" style="width: 130px; height:35px;font-size: ;background-color: #6BC8B2;"><a href="../php/survey.php" style="color:black">Survey</a></button>
+        
     </div>
+    <button class = "button" style="background-color: #6BC8B2;font-size: 20px;
+       border-color: #000000;
+       height: 70px; 
+       width: 150px;"><a href="../php/survey.php">Survey</a></button>
 
    </section>
    <?php include "../php/footer.php";?>

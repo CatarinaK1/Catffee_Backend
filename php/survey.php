@@ -44,7 +44,7 @@ include "../php/header.php";
 		<textarea id="comment" name="comment" placeholder="Enter your comments ..."></textarea>
         <br>
 	<br>
-		<input type="submit" class="btn" name="submit" value="Submit" style="width: 130px; height:35px;"><br>
+		<input type="submit" class="btn" name="submit" value="Submit"><br>
         <?php 
    if (isset($_POST['submit'])){
 

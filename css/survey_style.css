@@ -160,6 +160,17 @@ body{
     }
   .btn{
     background-color: #FFC1C1;
+
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+        color:black;
+        width: 155px;
+        height: 35px;
+        border: black
+    
+        font-size: 16px;
+ 
   }
     @media (max-width: 420px) {
 
