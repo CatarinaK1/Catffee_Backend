@@ -70,12 +70,24 @@
         </div>
         <br>
         <br>
-        
+        <button class = "button" style="background-color: #6BC8B2; text-align: center;
+    font-size: 20px;
+    font-weight: lighter;
+    background-color: #6BC8B2;
+    border-color: #000000;
+    height: 52px; 
+    width: 135px;
+    margin-top: 20px;
+    padding: 5px 14px;"><a href="../php/survey.php" style="  text-align: center;
+    font-size: 20px;
+    font-weight: lighter;
+    background-color:#6BC8B2;
+    height: 52px; 
+    width: 235px;
+    font-weight:bold;
+    color:#007777;">Survey</a></button>
     </div>
-    <button class = "button" style="background-color: #6BC8B2;font-size: 20px;
-       border-color: #000000;
-       height: 52px; 
-    width: 135px;"><a href="../php/survey.php">Survey</a></button>
+  
 
    </section>
    <?php include "../php/footer.php";?>
