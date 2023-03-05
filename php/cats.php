@@ -74,8 +74,8 @@
     </div>
     <button class = "button" style="background-color: #6BC8B2;font-size: 20px;
        border-color: #000000;
-       height: 70px; 
-       width: 150px;"><a href="../php/survey.php">Survey</a></button>
+       height: 52px; 
+    width: 135px;"><a href="../php/survey.php">Survey</a></button>
 
    </section>
    <?php include "../php/footer.php";?>
