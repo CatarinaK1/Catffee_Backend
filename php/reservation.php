@@ -3,7 +3,7 @@ session_start();
 if(isset($_POST['submit'])){
 $name = $_POST['fname'];
 $_SESSION['name'] = $name;
-echo "<script> location.href = 'order.php' </script>";
+echo "<script> location.href = 'orderAfterReserve.php' </script>";
 }
 
 ?>
@@ -81,7 +81,7 @@ echo "<script> location.href = 'order.php' </script>";
 
      <div class = "section2">
 
-    <h1>Would you also like to make an order?</h1>
+    <h1>Would you like to make an order without reservation?</h1>
 
 <button class = "makeOrder" ><a href="../php/order.php">Make Order</div></a></button>
 </div>

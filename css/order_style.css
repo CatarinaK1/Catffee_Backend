@@ -146,6 +146,7 @@ body{
     }
 
     .section2 h1{
+        margin-bottom: 20px;
         font-size: 40px;
         color: #007777;
         display: flex;
@@ -173,7 +174,8 @@ body{
         padding: 14px 0px;
       
         margin: 8px 0;
-        margin-left: 55px;
+        margin-left: 25px;
+        
         border: none;
         border-radius: 4px;
         font-size: 20px;
@@ -189,7 +191,7 @@ body{
         width: 30%;
         background-color:  #007777;
         color: white;
-        padding: 14px 0px;
+        padding: 14px 10px;
       
         margin: 8px 0;
         margin-left: 55px;

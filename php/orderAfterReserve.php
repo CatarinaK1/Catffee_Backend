@@ -12,7 +12,7 @@ include '../database/db.php';
 </style>
 
 <div class = "section1">
-<h1>Hi! what are you craving for? </h1>
+<h1>Hi <?php echo $displayname; ?>! what are you craving for? </h1>
     </div>
 
     <div class = "section2">  
@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     mysqli_stmt_bind_param($stmt, 's', $_POST['fname']);
     mysqli_stmt_execute($stmt);
     $orderId = mysqli_insert_id($connection) ;
-    $_SESSION['orderId'] = $orderId;
+    $orderId = $_SESSION['orderId'];
 
 
     foreach ($quan as $itemid => $itemQuantity) {
@@ -56,9 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 ?>
-    <body> <h1> Thank you! Your Order Id is <?php echo $orderId; ?> <br><br></h1>
-    <h2> You may pick up your order at the cafe </h2>
-  </body>
+    
 <?php } else {
     # code...
 
