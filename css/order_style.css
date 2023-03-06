@@ -152,6 +152,14 @@ body{
         justify-content: center;
         align-items: center;
     }
+
+    .section2 h2{
+        font-size: 22px;
+        color: #007777;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .section2 th{
         color: #007777;
         font-size: 30px;
@@ -370,6 +378,14 @@ body{
             justify-content: center;
             align-items: center;
         }
+        .section2 h2{
+            font-size: 12px;
+            color: #007777;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         .section2 th{
             color: #007777;
             font-size: 20px;

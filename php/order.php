@@ -53,7 +53,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 ?>
-    <body> <h1> Thank you! <br> You may pick up your order at the cafe</h1>  </body>
+    <body> <h1> Thank you! Your Order Id is <?php echo $orderId; ?> <br><br></h1>
+    <h2> You may pick up your order at the cafe </h2>
+  </body>
 <?php } else {
     # code...
 
