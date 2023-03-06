@@ -98,7 +98,7 @@ body{
     a:active { text-decoration: none; }
    
     section{
-        height: 1971px;
+        height: 2271px;
         background-color: #FFC1C1;
  
     }
@@ -136,7 +136,7 @@ body{
     
     .section2{
         background-color:#FFC1C1;
-        height: 757px;
+        height: 1357px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -312,7 +312,7 @@ body{
         a:active { text-decoration: none; }
     
         section{
-            height: 1171px;
+            height: 1471px;
             background-color: #FFC1C1;
      
         }
@@ -354,7 +354,7 @@ body{
         
         .section2{
             background-color:#FFC1C1;
-            height: 757px;
+            height: 1157px;
             display: flex;
             flex-direction: column;
             justify-content: center;
