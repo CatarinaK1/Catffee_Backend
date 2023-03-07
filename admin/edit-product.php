@@ -9,7 +9,7 @@ $productRow = mysqli_fetch_array($getProduct);
  ?>
 
 
-    <form style=" text-align: center;" method="POST" action="">
+    <form style=" text-align: center;" method="POST" action="" nsubmit="return notempity()" name="NewEdit">
     <input type="text" name="name" class="form-control" value="<?php echo $productRow['name']; ?>"><br><br>
     <input name="price" type="decimal(5,2)" class="form-control" style="margin-left: 14px;" size="60" value="<?php  echo $productRow['price'] ?>"><br><br>
     select category 
@@ -27,6 +27,25 @@ $productRow = mysqli_fetch_array($getProduct);
 </select> <br><br>
     <input type="submit" value="Submit"  name="submit" >
 </form>
+<script>
+//Not empity name and price for new product in AdminPanel
+function notempity() {
+  let name = (document.NewEdit.name.value).trim();
+  if (name.length < 3) {
+    alert("Product Name must have at least 3 characters");
+    return false;
+  }
+
+  let price = (document.NewEdit.price.value).trim();
+  if (!price.match(/^\d+(\.\d{1,2})?$/)) {
+    alert("Price must be a valid decimal number with up to 2 decimal places");
+    return false;
+  }
+
+  return true;
+}
+</script>
+
 <?php
 if (isset($_POST['submit'])){
     $name = $_POST['name'];

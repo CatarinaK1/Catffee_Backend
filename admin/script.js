@@ -1,4 +1,5 @@
 
+
 //Sort the AdminPanel table when the column header is clicked.
 function sortTable(n) {
   var table, rows, switching, i, x, y, shouldSwitch;
