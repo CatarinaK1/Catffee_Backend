@@ -9,7 +9,7 @@ $productRow = mysqli_fetch_array($getProduct);
  ?>
 
 
-    <form style=" text-align: center;" method="POST" action="" nsubmit="return notempity()" name="NewEdit">
+    <form style=" text-align: center;" method="POST" action="" onsubmit="return notempity()" name="NewEdit">
     <input type="text" name="name" class="form-control" value="<?php echo $productRow['name']; ?>"><br><br>
     <input name="price" type="decimal(5,2)" class="form-control" style="margin-left: 14px;" size="60" value="<?php  echo $productRow['price'] ?>"><br><br>
     select category 
@@ -28,7 +28,7 @@ $productRow = mysqli_fetch_array($getProduct);
     <input type="submit" value="Submit"  name="submit" >
 </form>
 <script>
-//Not empity name and price for new product in AdminPanel
+//Not empity name and price for edit product in AdminPanel
 function notempity() {
   let name = (document.NewEdit.name.value).trim();
   if (name.length < 3) {
