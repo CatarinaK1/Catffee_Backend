@@ -9,3 +9,4 @@ if(isset($_GET['itemid'])){
     header('Location: index.php');
 
 }
+?>
