@@ -31,7 +31,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     mysqli_stmt_bind_param($stmt, 's', $_POST['fname']);
     mysqli_stmt_execute($stmt);
     $orderId = mysqli_insert_id($connection) ;
-    $orderId = $_SESSION['orderId'];
+    //$orderId = $_SESSION['orderId'];
+    $_SESSION['orderId'] = $orderId;
 
 
     foreach ($quan as $itemid => $itemQuantity) {
